@@ -2,7 +2,7 @@ package Program;
 
 import java.util.Scanner;
 
-public class BiggestNumber {
+public class BiggestNumber123456 {
 	public static void main(String[] args) {
 
 		Scanner sc=new Scanner(System.in);
