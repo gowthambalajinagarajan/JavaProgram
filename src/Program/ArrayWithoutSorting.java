@@ -1,6 +1,6 @@
 package Program;
 
-public class ArrayWithoutSorting {
+public class ArrayWithoutSorting 123{
 
 	public static void main(String[] args) {
 		int a[]= {34,12,56,76,34};
