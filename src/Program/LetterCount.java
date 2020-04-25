@@ -1,6 +1,6 @@
 package Program;
 
-public class LetterCount132456 {
+public class LetterCount {
 	public static void main(String[] args) {
 	 String a="This is Java !@# 123";
 	 
