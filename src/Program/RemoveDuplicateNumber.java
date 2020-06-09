@@ -5,8 +5,9 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 public class RemoveDuplicateNumber {
+
 	public static void main(String[] args) {
-		int a[]= {1,2,5,4,1,2,87,41};
+		int a[]= {1,2,4,3,1,2,5,6,7,3};
 		HashMap<Integer,Integer> map=new HashMap<Integer,Integer>();
 		for(int c:a) {
 			if(map.containsKey(c)) {
@@ -25,4 +26,5 @@ public class RemoveDuplicateNumber {
 		}
 		System.out.println(map);
 	}
+
 }

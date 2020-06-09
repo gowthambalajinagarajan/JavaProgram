@@ -5,12 +5,11 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 public class CountCharacterinString {
-
 	public static void main(String[] args) {
-		String a="Hello";
-		HashMap<Character,Integer> map=new HashMap<Character,Integer>();
-		char ch[]=a.toCharArray();
-		for(char c:ch) {
+		String a="Java Program";
+		HashMap<String,Integer> map=new HashMap<String,Integer>();
+		String b[]=a.split("");
+		for(String c:b) {
 			if(map.containsKey(c)) {
 				int x=map.get(c);
 				map.put(c,x+1);
@@ -19,10 +18,13 @@ public class CountCharacterinString {
 				map.put(c,1);
 			}
 		}
-		Set<Entry<Character,Integer>> s=map.entrySet();
-		for(Entry<Character, Integer> entry:s) {
-			System.out.println(entry.getKey()+" "+entry.getValue());
+		Set<Entry<String,Integer>> s =map.entrySet();
+		for(Entry<String,Integer> e:s) {
+			if(e.getValue()>1) {
+				System.out.println(e.getKey());
+			}
 		}
+		System.out.println(map);
 	}
 
 }

@@ -1,22 +1,31 @@
 package Program;
 
+import java.util.Scanner;
+
 public class SecondMinimumNumber {
+
 	public static void main(String[] args) {
-		int a[]= {-12,45,-23,64,-100,24};
-		int temp;
-		for(int i=0;i<a.length;i++) {
-			for(int j=i+1;j<a.length;j++) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the no. of Element");
+		int n=sc.nextInt();
+		System.out.println("Enter the numbers");
+		int a[]=new int[n];
+		for(int i=0;i<n;i++) {
+			a[i]=sc.nextInt();
+		}
+		for(int i=0;i<n;i++) {
+			for(int j=i+1;j<n;j++) {
 				if(a[i]<a[j]) {
-					temp=a[i];
+					int temp=a[i];
 					a[i]=a[j];
 					a[j]=temp;
 				}
 			}
 		}
-		for(int i=0;i<a.length;i++) {
+		for(int i=0;i<n;i++) {
 			System.out.println(a[i]);
 		}
-
-		System.out.println("The Second Minimum Number is:"+a[a.length-2]);
+		System.out.println("Second Smallest Number:"+a[a.length-2]);
 	}
+
 }

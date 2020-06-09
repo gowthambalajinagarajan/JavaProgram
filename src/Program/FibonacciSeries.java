@@ -3,11 +3,19 @@ package Program;
 import java.util.Scanner;
 
 public class FibonacciSeries {
-
 	public static void main(String[] args) {
+		/*int a=0;
+		int b=1;
+		int c=0;
+		for(int i=1;i<=10;i++) {
+			c=a+b;
+			a=b;
+			b=c;
+			System.out.println(c);
+		}*/
 		
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the Numbers");
+		System.out.println("Enter the numbers");
 		int a=sc.nextInt();
 		int b=sc.nextInt();
 		int c=0;
@@ -23,13 +31,6 @@ public class FibonacciSeries {
 			b=c;
 			System.out.println(c);
 		}
+		
 	}
 }
-/*int count=1;
-int a=0,b=1;
-for(int i=1;i<=10;i++) {
-	int c=a+b;
-	a=b;
-	b=c;
-	System.out.println(c);
-	}*/

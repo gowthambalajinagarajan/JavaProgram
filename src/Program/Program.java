@@ -2,7 +2,7 @@ package Program;
 
 public class Program {
 	public static void main(String[] args) {
-		int a[]= {1,2,5,5,2,81,10};
+		int a[]= {1,2,3,65,4,3,6,34,32};
 		int first=a[0];
 		int second=a[1];
 		if(a[0]<a[1]) {
@@ -20,8 +20,6 @@ public class Program {
 				}
 			}
 		}
-		System.out.println(second);
-		
+			System.out.println(second);
 	}
-
 }

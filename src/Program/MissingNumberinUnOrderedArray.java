@@ -1,16 +1,19 @@
 package Program;
 
-public class MissingNumberinUnOrderedArray {
+public class MissingNumberinUnorderedArray {
+
 	public static void main(String[] args) {
-		int sum1=0,sum2=0;
-		int a[]= {2,1,5,4};
+		int a[]= {1,3,5,6,2};
+		int sum=0;
+		int sum1=0;
 		for(int i=0;i<a.length;i++) {
-			sum1=sum1+a[i];
+			sum=sum+a[i];
 		}
-		for(int j=0;j<=5;j++) {
-			sum2=sum2+j;
+		for(int j=0;j<=6;j++) {
+			sum1=sum1+j;
 		}
-		System.out.println(sum2-sum1);
+		System.out.println(sum1-sum);
+
 	}
 
 }

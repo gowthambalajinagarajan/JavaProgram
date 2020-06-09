@@ -3,6 +3,7 @@ package Program;
 import java.util.Scanner;
 
 public class CountNumberofDigits {
+
 	public static void main(String[] args) {
 		int a,b=0;
 		Scanner sc=new Scanner(System.in);
@@ -12,7 +13,7 @@ public class CountNumberofDigits {
 			a=a/10;
 			b++;
 		}
-		System.out.println("No. of Digits:"+b);
+		System.out.println("Number of Digit Present is:"+b);
 	}
 
 }

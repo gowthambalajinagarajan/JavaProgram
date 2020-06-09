@@ -1,9 +1,11 @@
 package Program;
 
 public class PrimeNumberFirst100 {
+
 	public static void main(String[] args) {
 		int count=0;
-		for(int i=2;count<=100;i++) {
+		
+		for(int i=1;i<=100;i++) {
 			boolean flag=true;
 			for(int j=2;j<=i/2;j++) {
 				if(i%j==0) {

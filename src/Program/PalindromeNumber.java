@@ -2,7 +2,7 @@ package Program;
 
 import java.util.Scanner;
 
-public class ReverseNumberandPalindrome {
+public class PalindromeNumber {
 
 	public static void main(String[] args) {
 		int a,b=0,c=0,d=0;
@@ -15,11 +15,14 @@ public class ReverseNumberandPalindrome {
 			d=(d*10)+c;
 			a=a/10;
 		}
+		System.out.println(d);
 		if(b==d) {
 			System.out.println("Palindrome");
 		}
 		else {
 			System.out.println("Not Palindrome");
 		}
+		
 	}
+
 }

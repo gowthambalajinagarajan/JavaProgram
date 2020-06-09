@@ -2,18 +2,18 @@ package Program;
 
 import java.util.Scanner;
 
-public class SumofDigits {
+public class SumOfDigits {
+
 	public static void main(String[] args) {
-		int a,b=0,sum=0;
+		int a,b=0,c=0;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the Number");
+		System.out.println("Enter the number");
 		a=sc.nextInt();
 		while(a>0) {
 			b=a%10;
-			sum=sum+b;
+			c=c+b;
 			a=a/10;
 		}
-		System.out.println("Sum of Digits:"+sum);
+		System.out.println("Sum of Digit:"+c);
 	}
-
 }
